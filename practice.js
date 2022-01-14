@@ -1,0 +1,1 @@
+console.log("This is Course - JavaScript The New Hard Parts");
