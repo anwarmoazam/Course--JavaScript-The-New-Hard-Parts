@@ -17,7 +17,7 @@ const data = [
       document.body.innerHTML = name;
     },0)
   }
-  
+
   // getData();
   
   function enrollData(obj,cbFn){
@@ -68,3 +68,18 @@ const data = [
 
 // Promise.all
 // Promise.race
+
+// Solution 1 : Generate objects using a function
+function userCreator(name,score){
+  const newUser = {};
+  newUser.name = name;
+  newUser.score = score;
+  newUser.increament = function(){
+    newUser.score++;
+  }
+  return newUser;
+}
+
+let user15 = userCreater('Anwar',10);
+
+console.log(user15);
