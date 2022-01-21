@@ -91,6 +91,16 @@ console.log(user15);
 // async generator
 // async await
 
+// Promise
+let p1 = new Promise((resolve,reject)=>{
+  resolve('Data');
+})
+
+p1.then((result)=>{
+  for(let i=0; i<data.length;i++){
+    console.log(`${result} is ${data[i].name}`);
+  }
+})
 
 function delay(ms) {
   // your code
