@@ -66,8 +66,6 @@ const data = [
 
 // }
 
-// Promise.all
-// Promise.race
 
 // Solution 1 : Generate objects using a function
 function userCreator(name,score){
@@ -80,6 +78,28 @@ function userCreator(name,score){
   return newUser;
 }
 
-let user15 = userCreater('Anwar',10);
+let user15 = userCreator('Anwar',10);
 
 console.log(user15);
+
+// Promise.all
+// Promise.race
+// Promises
+// Callback
+// Iterator
+// Generator
+// async generator
+// async await
+
+
+function delay(ms) {
+  // your code
+  return new Promise((resolve,reject)=>{
+    setTimeout(()=>{
+      resolve();
+    },ms)
+  })
+}
+
+// delay(3000).then(() => alert('runs after 3 seconds'));
+
